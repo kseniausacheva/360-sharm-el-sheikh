@@ -142,6 +142,39 @@
         );
       };
 
+      const VideoProduction = () => {
+        const services = [
+          'Podcasts / Interviews',
+          'Reels',
+          'YouTube Shows',
+          'Live Streams',
+          'Courses',
+          'Whiteboard Videos'
+        ];
+
+        return (
+          <section className="py-24 bg-gradient-to-r from-[#050505] via-[#0a0a1a] to-[#050505] relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0051ff]/5 to-transparent"></div>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+              <h2 className="text-4xl md:text-6xl font-black font-exo mb-12 uppercase">
+                PRODUCTION OF ANY<br/>
+                <span className="metallic-blue">VIDEO CONTENT</span>
+              </h2>
+              <div className="flex flex-wrap gap-4">
+                {services.map((service, index) => (
+                  <button
+                    key={index}
+                    className="px-6 py-3 rounded-full border border-white/20 text-white text-sm font-medium hover:bg-[#0051ff] hover:border-[#0051ff] transition-all duration-300"
+                  >
+                    {service}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      };
+
       const Hero = () => (
         <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
           <div className="absolute inset-0 z-0">
@@ -379,6 +412,7 @@
           <div className="flex flex-col min-h-screen">
             <Navbar />
             <Hero />
+            <VideoProduction />
             <About />
             <Studios />
             <Pricing />
