@@ -220,6 +220,58 @@
         </section>
       );
 
+      const ReelsSection = () => (
+        <section className="min-h-screen bg-[#050505] relative overflow-hidden">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <h2 className="text-6xl md:text-8xl font-black font-exo mb-6 uppercase text-gray-400 tracking-tighter">
+                  REELS
+                </h2>
+                <div className="inline-block bg-[#0051ff] text-white px-4 py-2 text-sm font-bold uppercase mb-8">
+                  That Go Viral
+                </div>
+                <p className="text-gray-400 text-xl leading-relaxed font-light italic mb-8">
+                  We've cracked the algorithm. Learn how to hook and keep your audience engaged from the first second to the last.
+                </p>
+                <div className="mb-10">
+                  <span className="text-gray-500 text-sm uppercase tracking-widest font-bold">from </span>
+                  <span className="text-4xl font-black font-exo metallic-blue">1,500 EGP</span>
+                  <span className="text-white text-xl font-bold"> / HOUR</span>
+                </div>
+                <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+                  <button className="bg-[#0051ff] hover:bg-blue-700 text-white px-10 py-4 rounded-sm font-bold transition-all uppercase tracking-wider text-sm">
+                    Book Now
+                  </button>
+                  <button className="flex items-center space-x-2 text-white font-bold hover:text-[#0051ff] transition-colors group">
+                    <span className="uppercase tracking-wider text-sm">Portfolio</span>
+                    <Icon name="arrow-right" size={20} className="group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              </div>
+              <div className="relative flex gap-4">
+                <div className="flex-1 relative">
+                  <img 
+                    src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=1974&auto=format&fit=crop" 
+                    alt="Reels Content Creator" 
+                    className="w-full h-[500px] object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0051ff]/30 to-transparent"></div>
+                </div>
+                <div className="flex-1 relative mt-16">
+                  <img 
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop" 
+                    alt="Content Creator" 
+                    className="w-full h-[500px] object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0051ff]/30 to-transparent"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      );
+
       const Hero = () => (
         <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
           <div className="absolute inset-0 z-0">
@@ -462,6 +514,7 @@
             <Pricing />
             <VideoProduction />
             <PodcastsInterviews />
+            <ReelsSection />
             <Contact />
             <Footer />
             
